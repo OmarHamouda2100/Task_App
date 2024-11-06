@@ -1,0 +1,24 @@
+.header {
+  background: rgb(201,201,201);
+  background: radial-gradient(circle, rgba(201,201,201,1) 19%, rgba(148,147,147,1) 66%);
+  height: 200px;
+}
+.info {
+  margin: 10px auto;
+}
+
+button {
+  color: white;
+  background-color: rgb(122, 11, 11);
+  border: none;
+  border-radius:6px ;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover{
+  color: rgb(122, 11, 11);
+  background-color: transparent;
+  border: 1px solid rgb(122, 11, 11);
+}

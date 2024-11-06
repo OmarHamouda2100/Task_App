@@ -1,0 +1,41 @@
+.task {
+  width: 90%;
+  max-width: 30rem;
+  background-color: #c9c9c9 ;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.task:hover {
+  transform: translateY(-10px);
+}
+.task-head {
+  background-color: #b8b6b6;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.disc {
+  background-color: white;
+  width: 28rem;
+  height: 125px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+button {
+  color: white;
+  background-color: rgb(122, 11, 11);
+  border: none;
+  border-radius:6px ;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover{
+  color: rgb(122, 11, 11);
+  background-color: transparent;
+  border: 1px solid rgb(122, 11, 11);
+}

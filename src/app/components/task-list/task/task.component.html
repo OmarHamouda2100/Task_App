@@ -1,0 +1,31 @@
+@if (Tasks().length === 0) {
+  <div class="row mt-5">
+    <div class="col-12">
+      <h1 class="text-center">There is no tasks</h1>
+    </div>
+  </div>
+} @else {
+  @for (task of Tasks(); track task.taskId) {
+    <div class="task text-center">
+      <div class="task-head text-center mt-5 p-3">
+        <h4>Task : {{ task.taskName }} </h4>
+      </div>
+      <div class="task-body my-3 ">
+        <div>
+          <h5 class="ms-3">Task Discription</h5>
+        </div>
+        <div class="disc">
+          <p class="text-start ms-3">{{ task.taskDiscription }}</p>
+        </div>
+      </div>
+      <div class="task-footer">
+        <div class="container mt-3 pb-3 text-end">
+          <button (click)="onComplated()" >Complated</button>
+        </div>
+      </div>
+  </div>
+}
+}
+
+
+

@@ -1,0 +1,36 @@
+<div class="overlay" (click)="onClose()"></div>
+<form (ngSubmit)="onSubmit()" >
+  <h3 class="p-3 text-center">Add Your Task</h3>
+  <div class="task-name mt-5">
+      <div class="row d-flex align-items-center text-center ">
+          <div class="col-4">
+            <label for="name">Task Name</label>
+          </div>
+          <div class="col-8">
+            <input type="text" name="name" placeholder="task name" [(ngModel)]="taskName">
+          </div>
+      </div>
+  </div>
+
+  <div class="task-disc mt-5 mb-5">
+      <div class="row d-flex align-items-center text-center">
+          <div class="col-4">
+            <label for="name">Task Discription</label>
+          </div>
+          <div class="col-8">
+            <textarea name="name" rows="3" [(ngModel)]="taskDiscription"></textarea>
+          </div>
+      </div>
+  </div>
+  <div class="buttons">
+    <div class="row d-flex align-items-center justify-content-between text-center">
+      <div class="col-6">
+        <button>Add Task</button>
+      </div>
+
+      <div class="col-6">
+        <button type="button" (click)="onClose()">close</button>
+      </div>
+    </div>
+  </div>
+</form>
